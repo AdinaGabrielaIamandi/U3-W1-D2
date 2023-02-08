@@ -10,12 +10,7 @@ class AllTheBooks extends Component {
         <Row>
           {fantasy.map((book) => {
             return (
-              <Col
-                sm={12}
-                md={6}
-                lg={3}
-                className="d-flex justify-content-center"
-              >
+              <Col sm={12} md={6} lg={3} className="d-flex justify-content-center">
                 <Card className="text-bg-secondary m-2">
                   <Card.Img
                     variant="top"
@@ -27,9 +22,7 @@ class AllTheBooks extends Component {
                     }}
                   />
                   <Card.Body>
-                    <Card.Title className="text-truncate">
-                      {book.title}
-                    </Card.Title>
+                    <Card.Title className="text-truncate">{book.title}</Card.Title>
                     <Button variant="dark">Buy</Button>
                   </Card.Body>
                 </Card>
